@@ -14,6 +14,10 @@ body {
 header {
     background-color: #00796B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 header .container {
@@ -45,6 +49,7 @@ header nav ul li a {
 
 main {
     min-height: 80vh;
+    margin-top: 150px;
 }
 
 section.banner {
@@ -68,6 +73,22 @@ main section h2 {
     color:  #00796B;
     text-transform: uppercase;
 }
+
+.btn-primary {
+    padding: 10px 30px;
+    background-color: #00796B;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0,5s ;
+}
+
+.btn-primary:hover {
+    background-color: rgb(120, 189, 189);
+   
+}
+
 
 
 /* SOBRE */
@@ -107,7 +128,9 @@ section.missao-visao-valores article {
     padding: 15px 30px;
 }
 
+
 /* SERVIÇOS */
+
 section.desenvolvimento .container,
 section.marketing .container,
 section.consultoria-ux .container {
@@ -126,6 +149,7 @@ main h1 {
     font-size: 50px;
     text-transform: uppercase;
 }
+
 
 /* CONTATO */
 
@@ -180,4 +204,9 @@ main h1 {
     max-width: 100%;
     width: 700px;
     height: 300px;
-}                   
+} 
+
+.info p a {
+    color: #00796B;
+    text-decoration: none; 
+}
