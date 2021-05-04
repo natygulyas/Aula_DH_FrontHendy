@@ -1,212 +1,251 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #9B9B9B;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #9b9b9b;
 }
 
 header {
-    background-color: #00796B;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+  background-color: #00796b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav ul {
-    list-style: none;
+  list-style: none;
+  transition: background-color 0, 5s;
 }
 
 header nav ul li {
-    display: inline-block;
-    padding: 10px;
+  display: inline-block;
+  padding: 10px;
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background-color 0, 5s;
+}
+
+header nav ul li a:hover {
+  background-color: #09443d;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .container {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 main {
-    min-height: 80vh;
-    margin-top: 150px;
+  min-height: 80vh;
+  margin-top: 150px;
 }
 
 section.banner {
-    padding: 50px;
+  padding: 50px;
 }
 
 section.banner .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer {
-    text-align: center;
-    background-color: #C4C4C4;
-    padding: 10px;
-    color: white;
+  text-align: center;
+  background-color: #c4c4c4;
+  padding: 10px;
+  color: white;
+  height: 80px;
 }
 
 main section h2 {
-    color:  #00796B;
-    text-transform: uppercase;
+  color: #00796b;
+  text-transform: uppercase;
 }
 
 .btn-primary {
-    padding: 10px 30px;
-    background-color: #00796B;
-    color: #fff;
-    text-transform: uppercase;
-    display: inline-block;
-    text-decoration: none;
-    transition: background-color 0,5s ;
+  padding: 10px 30px;
+  background-color: #00796b;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0, 5s;
 }
 
 .btn-primary:hover {
-    background-color: rgb(120, 189, 189);
-   
+  background-color: rgb(120, 189, 189);
 }
 
-
+.botao-na-home {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
 
 /* SOBRE */
 
 section.introducao-sobre {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 section.introducao-sobre h1 {
-    color: #00796B;
-    font-size: 50px;
-    text-transform: uppercase;
+  color: #00796b;
+  font-size: 50px;
+  text-transform: uppercase;
 }
 
 .introducao-sobre .intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 section.video-sobre iframe {
-    width: 100%;
-    height: 600px;
+  width: 100%;
+  height: 600px;
 }
 
 section.missao-visao-valores {
-    text-align: center;
+  text-align: center;
 }
 
 section.missao-visao-valores article h2 {
-    font-size: 30px;
-    color: #00796B;
-    text-transform: uppercase;
+  font-size: 30px;
+  color: #00796b;
+  text-transform: uppercase;
 }
 
 section.missao-visao-valores article {
-    padding: 15px 30px;
+  padding: 15px 30px;
 }
-
 
 /* SERVIÇOS */
 
 section.desenvolvimento .container,
 section.marketing .container,
 section.consultoria-ux .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
 }
 
 section.marketing .container {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 main h1 {
-    color: #00796B;
-    font-size: 50px;
-    text-transform: uppercase;
+  color: #00796b;
+  font-size: 50px;
+  text-transform: uppercase;
 }
-
 
 /* CONTATO */
 
 .contato {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
 }
 
 .contato form input:not([type="radio"]):not([type="checkbox"]),
 .contato form textarea,
 .contato form select {
-    width: 100%;
-    padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 
-.contato form input:not([type="radio"]):not([type="checkbox"]):focus, 
-.contato form textarea:focus, 
+.contato form input:not([type="radio"]):not([type="checkbox"]):focus,
+.contato form textarea:focus,
 .contato form select:focus {
-    outline-color: #00796B;
+  outline-color: #00796b;
 }
 
 .contato form fieldset {
-    margin: 15px 0;
-    border-color: #fff;
+  margin: 15px 0;
+  border-color: #fff;
 }
 
 .contato form textarea {
-    resize: none;
-    height: 100px;
+  resize: none;
+  height: 100px;
 }
 
 .contato form label {
-    margin: 10px 0 5px;
-    display: inline-block;
+  margin: 10px 0 5px;
+  display: inline-block;
 }
 
 .contato form button {
-    border: none;
-    background-color: #00796B;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px;
-    width: 100%;
-    margin: 15px 0;
+  border: none;
+  background-color: #00796b;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 100%;
+  margin: 15px 0;
 }
 
 .contato .info {
-    padding: 15px 30px;
+  padding: 15px 30px;
 }
 
 .contato .info iframe {
-    max-width: 100%;
-    width: 700px;
-    height: 300px;
-} 
+  max-width: 100%;
+  width: 700px;
+  height: 300px;
+}
 
 .info p a {
-    color: #00796B;
-    text-decoration: none; 
+  color: #00796b;
+  text-decoration: none;
+}
+
+/* ORÇAMENTO */
+
+main section .titulo-orcamento {
+  text-align: center;
+}
+
+main section form.orcamento {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #00796b;
+  color: white;
+}
+
+main section form button.orcamento-button {
+  margin-top: 40px;
+  background-color: #09443d;
+  border-radius: 10px;
+  transition: background-color 0, 5s;
+}
+
+main section form button.orcamento-button:hover {
+  background-color: rgb(120, 189, 189);
 }
