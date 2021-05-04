@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Up - Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Grow Up">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <h1>Orçamento</h1>
+
+                <div class="contato">
+                    <form method="POST">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" required>
+                        <fieldset>
+                            <legend>Serviços</legend>
+
+                            <input type="checkbox" name="servicos" id="servicos_desenvolvimento"
+                                value="Desenvolvimento Web">
+                            <label for="servicos_desenvolvimento">Desenvolvimento Web</label>
+
+                            <input type="checkbox" name="servicos" id="servicos_marketing" value="Marketing Digital">
+                            <label for="servicos_marketing">Marketing Digital</label>
+
+                            <input type="checkbox" name="servicos" id="servicos_ux" value="Consultoria UX">
+                            <label for="servicos_ux">Consultoria UX</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Urgência na entrega</legend>
+
+                            <input type="radio" name="urgencia" id="urgencia_sim" value="Entrega com urgência">
+                            <label for="urgencia_sim">Sim</label>
+
+                            <input type="radio" name="urgencia" id="urgencia_nao" value="Entrega sem urgência" checked>
+                            <label for="urgencia_nao">Não</label>
+                        </fieldset>
+
+                        <label for="data_entrega">Data de Entrega</label>
+                        <input type="date" name="data_entrega" id="data_entrega">
+
+                        <label for="descricao">Descrição</label>
+                        <textarea name="descricao" id="descricao"></textarea>
+
+                        <label for="anexos">Anexos</label>
+                        <input type="file" name="anexos" id="anexos">
+
+                        <label for="publico_alvo">Qual é o publico alvo do seu projeto?</label>
+                        <input type="text" name="publico_alvo" id="publico_alvo">
+
+                        <label for="forma_pagamento">Forma de pagamento</label>
+                        <select name="forma_pagamento" id="forma_pagamento" required>
+                            <option selected disabled>Selecione uma opção</option>
+                            <option value="Débito">Débito</option>
+                            <option value="Crédito">Crédito</option>
+                            <option value="Transferencia bancária">Transferencia bancária</option>
+                            <option value="Boleto">Boleto</option>
+                        </select>
+
+                        <label for="origem_cliente">Como conheceu a Grow Up?</label>
+                        <select name="origem_cliente" id="origem_cliente">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Google">Google</option>
+                            <option value="Amarelinho">Amarelinho</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>copyright - Grow Up </p>
+    </footer>
+</body>
+
+</html>
