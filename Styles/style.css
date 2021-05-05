@@ -19,6 +19,7 @@ header {
   height: 80px;
   top: 0;
   left: 0;
+  z-index: 2; /*Z é o eixo das camadas, 0 é o padrão enquanto maior o numero mais pra frente fica a camada*/
 }
 
 header .container {
@@ -41,13 +42,19 @@ header nav ul li a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  transition: background-color 0, 5s;
 }
 
-header nav ul li a:hover {
-  background-color: #09443d;
-  padding: 5px;
-  border-radius: 5px;
+header nav ul li a:after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  transition: 0.5s
+}
+
+header nav ul li:hover a:after{
+  width: 100%;
 }
 
 .container {
@@ -248,4 +255,14 @@ main section form button.orcamento-button {
 
 main section form button.orcamento-button:hover {
   background-color: rgb(120, 189, 189);
+}
+
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.img-destaque {
+  animation: flutuar 3s infinite;
 }
