@@ -99,16 +99,18 @@ main section h2 {
   border-radius: 10px;
   text-decoration: none;
   transition: background-color 0, 5s;
+  box-shadow: 0px 5px 6px rgb(0 0 0 / 30%);
+  cursor: pointer;
 }
 
 .btn-primary:hover {
   background-color: rgb(120, 189, 189);
 }
 
-.botao-na-home {
+.botao-de-orcamento {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* SOBRE */
@@ -251,6 +253,8 @@ main section form button.orcamento-button {
   background-color: #09443d;
   border-radius: 10px;
   transition: background-color 0, 5s;
+  box-shadow: 0px 5px 6px rgb(0 0 0 / 30%);
+  cursor: pointer;
 }
 
 main section form button.orcamento-button:hover {
