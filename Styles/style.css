@@ -16,7 +16,6 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   width: 100%;
-  height: 80px;
   top: 0;
   left: 0;
   z-index: 2; /*Z é o eixo das camadas, 0 é o padrão enquanto maior o numero mais pra frente fica a camada*/
@@ -269,4 +268,69 @@ main section form button.orcamento-button:hover {
 
 .img-destaque {
   animation: flutuar 3s infinite;
+  width: 500px;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  section.banner .container,
+  section.introducao-sobre .container .intro,
+  section.desenvolvimento .container,
+  section.marketing .container,
+  section.consultoria-ux .container,
+  section .container .contato {
+    flex-wrap: wrap;
+  }
+
+  section.introducao-sobre,
+  section .container .contato,
+  section.desenvolvimento .container,
+  section.marketing .container,
+  section.consultoria-ux .container {
+    padding: 0 40px;
+  }
+
+  section.missao-visao-valores .container {
+    margin: 0 auto;
+
+  }
+
+  section.video-sobre iframe {
+    height: 400px;
+    padding: 40px;
+  }
+
+  section.banner .container .texto,
+  main {
+    text-align: center;
+  }
+  
+  section.introducao-sobre .intro img.img-destaque,
+  section.marketing .container img.img-destaque,
+  section.consultoria-ux .container img.img-destaque {
+    display: none;
+  }
+
+  section.banner {
+    padding: 0 40px 40px;
+  }
+
+  section.desenvolvimento,
+  section.marketing,
+  section.consultoria-ux {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 515px) {
+  header .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header nav ul {
+    padding: 0;
+    margin: 0;
+  }
 }
